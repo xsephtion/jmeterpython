@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list">
+          <elementProp name="" elementType="Authorization">
+            <stringProp name="Authorization.url">https://manvswmibf01:28562/frwksoapapi/servlet/rpcrouter</stringProp>
+            <stringProp name="Authorization.username">RWUSER01</stringProp>
+            <stringProp name="Authorization.password">RWUSER01</stringProp>
+            <stringProp name="Authorization.domain"></stringProp>
+            <stringProp name="Authorization.realm"></stringProp>
+          </elementProp>
+        </collectionProp>
+      </AuthManager>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding">UTF-8</stringProp>
+        <stringProp name="filename">C:\Users\ccelemin\Desktop\MA PERFTEST NOV\DATA\CUSD_TestData1_rw2.csv</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">true</boolProp>
+        <stringProp name="variableNames">loami_apfotranid,clip2i_tranid,clipi_tranid,clip2i_ddlnrf,clipi_ddlnrf,cusdi_apfotranid,cusdi_ddcusn,cusdi_ddcna1,cusdi_ddcssn,cusdi_ddcna2,cusdi_ddcrnm,cusdi_ddcrtn,cusdi_ddcncz,cusdi_ddcolc, amadi_apfotranid, amadi_ddacsq, amad2i_apfotranid,amad2i_ddacsq, valid_tranid,fcipi_apfotranid,famdi_tranid,famd2i_tranid,famd3i_tranid,sirsi_apfotranid,cirsi_apfotranid,fxdli_apfotranid, frai_apfotranid, ipayi_apfotranid, opayi_apfotranid, tradi_apfotranid, secsi_apfotranid, secsi_ddsesn, cusxi_apfotranid, hditi_apfotranid, hditi_hirf, fwrti_apfotranid, nosri_apfotranid, dpmvi_apfotranid, dpwii_apfotranid, dpwoi_apfotranid, bithi_apfotranid, bitpi_apfotranid, intci_apfotranid, nassi_apfotranid, cacfi_apfotranid, naspi_apfotranid, stori_apfotranid, stori_stor, bsrti_apfotranid, bsrti_ddnbrt, ldnii_apfotranid, deami_apfotranid, bithi_ddbtnb, cirsi_sdlno, cusxi_ipdn, dpmvi_dddprn, dpwii_dddprn, intci_ddl1dn, loami_ddseqn, dpwoi_dddprn, deami_ddamnp, deami_ddds38, rpsci_apfotranid, rpsci_ddseqn, mapyi_apfotranid, mapyi_ddseqn, nosri_ddnonb, nosri_ddccy, clip3i_tranid, clip3i_ddlnrf, naspi_dddlno, cusdir_apfotranid, cusdir_ddcusn, cusdir_ddcna1, cusdir_ddcssn, cusdir_ddcna2, cusdir_ddcrnm, cusdir_ddcrtn, cusdir_ddcncz, cusdir_ddcolc, cusdiu_apfotranid, cusdiu_ddcusn, cusdiu_ddcna1, cusdiu_ddcssn, cusdiu_ddcna2, cusdiu_ddcrnm, cusdiu_ddcrtn, cusdiu_ddcncz, cusdiu_ddcolc, cusdid_apfotranid, cusdid_ddcusn, cusdid_ddcna1, cusdid_ddcssn, cusdid_ddcna2, cusdid_ddcrnm, cusdid_ddcrtn, cusdid_ddcncz, cusdid_ddcolc, amadir_apfotranid, amadir_ddacsq, amad2ia_apfotranid, amad2ia_ddacsq, amad2id_apfotranid, amad2id_ddacsq, amadir_cusd, amad2ia_cusd, amad2id_cusd, amad2i_cusd, deami_dddlno, loami3_apfotranid, clipi3_ddlnrf, cusdi3_ddcusn, loami53_apfotranid, clipi53_ddlnrf, loami53_ddseqn, cusdi53_ddcusn, fcipi103_apfotranid, cusdi103_ddcusn, famdi153_tranid, cusdi153_ddcusn, famdi203_tranid, cusdi203_ddcusn, famdi253_tranid, cusdi253_ddcusn, clipi303_tranid, cusdi303_ddcusn, cusdi303_ddcssn, cusdi303_ddcrnm, cusdi303_ddcrtn, clipi353_tranid, cusdi353_ddcusn, cusdi353_ddcssn, cusdi353_ddcrnm, cusdi353_ddcrtn, fcipi403_apfotranid, cusdi403_ddcusn, clipi453_tranid, clipi453_ddlnrf, cusdi453_ddcusn, cusdi453_ddcssn, cusdi453_ddcrnm, cusdi453_ddcrtn, clipi503_tranid, cusdi503_ddcusn, cusdi503_ddcssn, cusdi503_ddcrnm, cusdi503_ddcrtn, clipi553_tranid, cusdi553_ddcusn, cusdi553_ddcssn, cusdi553_ddcrnm, cusdi553_ddcrtn, clipi603_tranid, clipi603_ddlnrf, cusdi603_ddcusn, cusdi603_ddcssn, cusdi603_ddcrnm, cusdi603_ddcrtn, fcipi653_apfotranid, cusdi653_ddcusn, deami_cusd</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Number of Users" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">stoptest</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">0</stringProp>
+        <longProp name="ThreadGroup.start_time">1375525852000</longProp>
+        <longProp name="ThreadGroup.end_time">1375525852000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">text/xml; charset=utf-8</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">SOAPAction</stringProp>
+              <stringProp name="Header.value">&quot;http://tempuri.org/com.misys.midas.soapapi.MidasActionAPISoapHandler&quot;</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CUSD_INSERT SP1 - FOR MA" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:com=&quot;http://tempuri.org/com.misys.midas.soapapi.MidasActionAPISoapHandler&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;com:midasActionAPI soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&#xd;
+         &lt;apiNames xsi:type=&quot;xsd:string&quot;&gt;WRITE!MIDAS.CUSD&lt;/apiNames&gt;&#xd;
+         &lt;zone xsi:type=&quot;xsd:string&quot;&gt;SPAIN&lt;/zone&gt;&#xd;
+         &lt;xml xsi:type=&quot;xsd:string&quot;&gt;&lt;![CDATA[&lt;midasActionAPI&gt;&lt;CUSD&gt;&lt;APTGTTYPE&gt;CUSD&lt;/APTGTTYPE&gt;&lt;APTGTSYS&gt;MIDAS&lt;/APTGTSYS&gt;&lt;APSRCTYPE&gt;&lt;/APSRCTYPE&gt;&lt;APSRCSYS&gt;&lt;/APSRCSYS&gt;&lt;APUSERID&gt;RWUSER01&lt;/APUSERID&gt;&lt;APPASSWORD&gt;RWUSER01&lt;/APPASSWORD&gt;&lt;APFORMAT&gt;&lt;/APFORMAT&gt;&lt;APVERSION&gt;&lt;/APVERSION&gt;&lt;APRPYQUEUE&gt;&lt;/APRPYQUEUE&gt;&lt;APRESPMODE&gt;&lt;/APRESPMODE&gt;&lt;APMAPLOCN&gt;&lt;/APMAPLOCN&gt;&lt;APFOTRANID&gt;${cusdi_apfotranid}&lt;/APFOTRANID&gt;&lt;APFOAASOCID&gt;&lt;/APFOAASOCID&gt;&lt;APCNFVALFO&gt;Y&lt;/APCNFVALFO&gt;&lt;APRPRLOCN&gt;B&lt;/APRPRLOCN&gt;&lt;APRETCODE&gt;&lt;/APRETCODE&gt;&lt;APMIDUSR&gt;RWUSER01&lt;/APMIDUSR&gt;&lt;APAUTHFLD&gt;&lt;/APAUTHFLD&gt;&lt;DDACTN&gt;I&lt;/DDACTN&gt;&lt;DDCUSN&gt;${cusdi_ddcusn}&lt;/DDCUSN&gt;&lt;DDCNA1&gt;${cusdi_ddcna1}&lt;/DDCNA1&gt;&lt;DDCSSN&gt;${cusdi_ddcssn}&lt;/DDCSSN&gt;&lt;DDCNA2&gt;${cusdi_ddcna2}&lt;/DDCNA2&gt;&lt;DDDRCS&gt;&lt;/DDDRCS&gt;&lt;DDLCCD&gt;&lt;/DDLCCD&gt;&lt;DDCNA3&gt;&lt;/DDCNA3&gt;&lt;DDCNA4&gt;&lt;/DDCNA4&gt;&lt;DDCRNM&gt;${cusdi_ddcrnm}&lt;/DDCRNM&gt;&lt;DDCRTN&gt;${cusdi_ddcrtn}&lt;/DDCRTN&gt;&lt;DDDINC&gt;&lt;/DDDINC&gt;&lt;DDPAIN&gt;&lt;/DDPAIN&gt;&lt;DDPCNB&gt;&lt;/DDPCNB&gt;&lt;DDACOC&gt;&lt;/DDACOC&gt;&lt;DDCASC&gt;&lt;/DDCASC&gt;&lt;DDCNCZ&gt;${cusdi_ddcncz}&lt;/DDCNCZ&gt;&lt;DDBSIN&gt;&lt;/DDBSIN&gt;&lt;DDCOLC&gt;${cusdi_ddcolc}&lt;/DDCOLC&gt;&lt;DDBNBI&gt;&lt;/DDBNBI&gt;&lt;DDSDAL&gt;&lt;/DDSDAL&gt;&lt;DDLINC&gt;01&lt;/DDLINC&gt;&lt;DDFCAL&gt;&lt;/DDFCAL&gt;&lt;DDLICD&gt;&lt;/DDLICD&gt;&lt;DDCTNB&gt;&lt;/DDCTNB&gt;&lt;DDTAIN&gt;&lt;/DDTAIN&gt;&lt;DDREID&gt;&lt;/DDREID&gt;&lt;DDBRCD&gt;001&lt;/DDBRCD&gt;&lt;DDCSTY&gt;R&lt;/DDCSTY&gt;&lt;DDCDEL&gt;N&lt;/DDCDEL&gt;&lt;DDBRTH&gt;&lt;/DDBRTH&gt;&lt;DDPRVO&gt;&lt;/DDPRVO&gt;&lt;DDDOLV&gt;&lt;/DDDOLV&gt;&lt;DDMDTL&gt;&lt;/DDMDTL&gt;&lt;ADDCNA1&gt;&lt;/ADDCNA1&gt;&lt;ADDCNA2&gt;&lt;/ADDCNA2&gt;&lt;ADDCNA3&gt;&lt;/ADDCNA3&gt;&lt;ADDCNA4&gt;&lt;/ADDCNA4&gt;&lt;DDCWL1&gt;&lt;/DDCWL1&gt;&lt;DDCWL2&gt;&lt;/DDCWL2&gt;&lt;DDCWL3&gt;&lt;/DDCWL3&gt;&lt;DDCWL4&gt;&lt;/DDCWL4&gt;&lt;DDCWL5&gt;&lt;/DDCWL5&gt;&lt;DDBRT1&gt;&lt;/DDBRT1&gt;&lt;DDBRT2&gt;&lt;/DDBRT2&gt;&lt;DDCITY&gt;&lt;/DDCITY&gt;&lt;DDZIPC&gt;&lt;/DDZIPC&gt;&lt;DDTINO&gt;&lt;/DDTINO&gt;&lt;DDIDTP&gt;&lt;/DDIDTP&gt;&lt;DDISCT&gt;&lt;/DDISCT&gt;&lt;DDISDT&gt;&lt;/DDISDT&gt;&lt;DDDBTH&gt;&lt;/DDDBTH&gt;&lt;DDBTHC&gt;&lt;/DDBTHC&gt;&lt;DDBTHT&gt;&lt;/DDBTHT&gt;&lt;HOPRFC&gt;AA00&lt;/HOPRFC&gt;&lt;COCUTY&gt;GY&lt;/COCUTY&gt;&lt;AUTOAUTH&gt;Y&lt;/AUTOAUTH&gt;&lt;E5BEXT&gt;N&lt;/E5BEXT&gt;&lt;LLINC&gt;50&lt;/LLINC&gt;&lt;/CUSD&gt;&lt;/midasActionAPI&gt;]]&gt;&lt;/xml&gt;&#xd;
+         &lt;returnFormat xsi:type=&quot;xsd:int&quot;&gt;1&lt;/returnFormat&gt;&#xd;
+      &lt;/com:midasActionAPI&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">manvswmibf01</stringProp>
+          <stringProp name="HTTPSampler.port">28562</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/frwksoapapi/servlet/rpcrouter</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="TestPlan.comments">Verify content in response</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">children</stringProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CUSD_UPDATE SP1 - FOR MA" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:com=&quot;http://tempuri.org/com.misys.midas.soapapi.MidasActionAPISoapHandler&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;com:midasActionAPI soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&#xd;
+         &lt;apiNames xsi:type=&quot;xsd:string&quot;&gt;UPDATE!MIDAS.CUSD&lt;/apiNames&gt;&#xd;
+         &lt;zone xsi:type=&quot;xsd:string&quot;&gt;SPAIN&lt;/zone&gt;&#xd;
+         &lt;xml xsi:type=&quot;xsd:string&quot;&gt;&lt;![CDATA[&lt;midasActionAPI&gt;&lt;CUSD&gt;&lt;APTGTTYPE&gt;CUSD&lt;/APTGTTYPE&gt;&lt;APTGTSYS&gt;MIDAS&lt;/APTGTSYS&gt;&lt;APSRCTYPE&gt;&lt;/APSRCTYPE&gt;&lt;APSRCSYS&gt;&lt;/APSRCSYS&gt;&lt;APUSERID&gt;RWUSER01&lt;/APUSERID&gt;&lt;APPASSWORD&gt;RWUSER01&lt;/APPASSWORD&gt;&lt;APFORMAT&gt;&lt;/APFORMAT&gt;&lt;APVERSION&gt;&lt;/APVERSION&gt;&lt;APRPYQUEUE&gt;&lt;/APRPYQUEUE&gt;&lt;APRESPMODE&gt;&lt;/APRESPMODE&gt;&lt;APMAPLOCN&gt;&lt;/APMAPLOCN&gt;&lt;APFOTRANID&gt;${cusdi_apfotranid}&lt;/APFOTRANID&gt;&lt;APFOAASOCID&gt;&lt;/APFOAASOCID&gt;&lt;APCNFVALFO&gt;Y&lt;/APCNFVALFO&gt;&lt;APRPRLOCN&gt;B&lt;/APRPRLOCN&gt;&lt;APRETCODE&gt;&lt;/APRETCODE&gt;&lt;APMIDUSR&gt;RWUSER01&lt;/APMIDUSR&gt;&lt;APAUTHFLD&gt;&lt;/APAUTHFLD&gt;&lt;DDACTN&gt;A&lt;/DDACTN&gt;&lt;DDCUSN&gt;${cusdi_ddcusn}&lt;/DDCUSN&gt;&lt;DDCNA1&gt;${cusdi_ddcna1}&lt;/DDCNA1&gt;&lt;DDCSSN&gt;${cusdi_ddcssn}&lt;/DDCSSN&gt;&lt;DDCNA2&gt;${cusdi_ddcna2}&lt;/DDCNA2&gt;&lt;DDDRCS&gt;&lt;/DDDRCS&gt;&lt;DDLCCD&gt;&lt;/DDLCCD&gt;&lt;DDCNA3&gt;&lt;/DDCNA3&gt;&lt;DDCNA4&gt;&lt;/DDCNA4&gt;&lt;DDCRNM&gt;${cusdi_ddcrnm}&lt;/DDCRNM&gt;&lt;DDCRTN&gt;TOWN 33&lt;/DDCRTN&gt;&lt;DDDINC&gt;&lt;/DDDINC&gt;&lt;DDPAIN&gt;&lt;/DDPAIN&gt;&lt;DDPCNB&gt;&lt;/DDPCNB&gt;&lt;DDACOC&gt;&lt;/DDACOC&gt;&lt;DDCASC&gt;&lt;/DDCASC&gt;&lt;DDCNCZ&gt;${cusdi_ddcncz}&lt;/DDCNCZ&gt;&lt;DDBSIN&gt;&lt;/DDBSIN&gt;&lt;DDCOLC&gt;${cusdi_ddcolc}&lt;/DDCOLC&gt;&lt;DDBNBI&gt;&lt;/DDBNBI&gt;&lt;DDSDAL&gt;&lt;/DDSDAL&gt;&lt;DDLINC&gt;01&lt;/DDLINC&gt;&lt;DDFCAL&gt;&lt;/DDFCAL&gt;&lt;DDLICD&gt;&lt;/DDLICD&gt;&lt;DDCTNB&gt;&lt;/DDCTNB&gt;&lt;DDTAIN&gt;&lt;/DDTAIN&gt;&lt;DDREID&gt;&lt;/DDREID&gt;&lt;DDBRCD&gt;001&lt;/DDBRCD&gt;&lt;DDCSTY&gt;R&lt;/DDCSTY&gt;&lt;DDCDEL&gt;N&lt;/DDCDEL&gt;&lt;DDBRTH&gt;&lt;/DDBRTH&gt;&lt;DDPRVO&gt;&lt;/DDPRVO&gt;&lt;DDDOLV&gt;&lt;/DDDOLV&gt;&lt;DDMDTL&gt;&lt;/DDMDTL&gt;&lt;ADDCNA1&gt;&lt;/ADDCNA1&gt;&lt;ADDCNA2&gt;&lt;/ADDCNA2&gt;&lt;ADDCNA3&gt;&lt;/ADDCNA3&gt;&lt;ADDCNA4&gt;&lt;/ADDCNA4&gt;&lt;DDCWL1&gt;&lt;/DDCWL1&gt;&lt;DDCWL2&gt;&lt;/DDCWL2&gt;&lt;DDCWL3&gt;&lt;/DDCWL3&gt;&lt;DDCWL4&gt;&lt;/DDCWL4&gt;&lt;DDCWL5&gt;&lt;/DDCWL5&gt;&lt;DDBRT1&gt;&lt;/DDBRT1&gt;&lt;DDBRT2&gt;&lt;/DDBRT2&gt;&lt;DDCITY&gt;&lt;/DDCITY&gt;&lt;DDZIPC&gt;&lt;/DDZIPC&gt;&lt;DDTINO&gt;&lt;/DDTINO&gt;&lt;DDIDTP&gt;&lt;/DDIDTP&gt;&lt;DDISCT&gt;&lt;/DDISCT&gt;&lt;DDISDT&gt;&lt;/DDISDT&gt;&lt;DDDBTH&gt;&lt;/DDDBTH&gt;&lt;DDBTHC&gt;&lt;/DDBTHC&gt;&lt;DDBTHT&gt;&lt;/DDBTHT&gt;&lt;HOPRFC&gt;AA00&lt;/HOPRFC&gt;&lt;COCUTY&gt;GY&lt;/COCUTY&gt;&lt;AUTOAUTH&gt;Y&lt;/AUTOAUTH&gt;&lt;E5BEXT&gt;N&lt;/E5BEXT&gt;&lt;LLINC&gt;50&lt;/LLINC&gt;&lt;/CUSD&gt;&lt;/midasActionAPI&gt;]]&gt;&lt;/xml&gt;&#xd;
+         &lt;returnFormat xsi:type=&quot;xsd:int&quot;&gt;1&lt;/returnFormat&gt;&#xd;
+      &lt;/com:midasActionAPI&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">manvswmibf01</stringProp>
+          <stringProp name="HTTPSampler.port">28562</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/frwksoapapi/servlet/rpcrouter</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="TestPlan.comments">Verify content in response</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">children</stringProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CUSD_REVERSE SP1 - FOR MA" enabled="false">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soapenv:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:com=&quot;http://tempuri.org/com.misys.midas.soapapi.MidasActionAPISoapHandler&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;com:midasActionAPI soapenv:encodingStyle=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot;&gt;&#xd;
+         &lt;apiNames xsi:type=&quot;xsd:string&quot;&gt;REVERSE!MIDAS.CUSD&lt;/apiNames&gt;&#xd;
+         &lt;zone xsi:type=&quot;xsd:string&quot;&gt;SPAIN&lt;/zone&gt;&#xd;
+         &lt;xml xsi:type=&quot;xsd:string&quot;&gt;&lt;![CDATA[&lt;midasActionAPI&gt;&lt;CUSD&gt;&lt;APTGTTYPE&gt;CUSD&lt;/APTGTTYPE&gt;&lt;APTGTSYS&gt;MIDAS&lt;/APTGTSYS&gt;&lt;APSRCTYPE&gt;&lt;/APSRCTYPE&gt;&lt;APSRCSYS&gt;&lt;/APSRCSYS&gt;&lt;APUSERID&gt;RWUSER01&lt;/APUSERID&gt;&lt;APPASSWORD&gt;RWUSER01&lt;/APPASSWORD&gt;&lt;APFORMAT&gt;&lt;/APFORMAT&gt;&lt;APVERSION&gt;&lt;/APVERSION&gt;&lt;APRPYQUEUE&gt;&lt;/APRPYQUEUE&gt;&lt;APRESPMODE&gt;&lt;/APRESPMODE&gt;&lt;APMAPLOCN&gt;&lt;/APMAPLOCN&gt;&lt;APFOTRANID&gt;${cusdi_apfotranid}&lt;/APFOTRANID&gt;&lt;APFOAASOCID&gt;&lt;/APFOAASOCID&gt;&lt;APCNFVALFO&gt;Y&lt;/APCNFVALFO&gt;&lt;APRPRLOCN&gt;B&lt;/APRPRLOCN&gt;&lt;APRETCODE&gt;&lt;/APRETCODE&gt;&lt;APMIDUSR&gt;RWUSER01&lt;/APMIDUSR&gt;&lt;APAUTHFLD&gt;&lt;/APAUTHFLD&gt;&lt;DDACTN&gt;R&lt;/DDACTN&gt;&lt;DDCUSN&gt;${cusdi_ddcusn}&lt;/DDCUSN&gt;&lt;DDCNA1&gt;${cusdi_ddcna1}&lt;/DDCNA1&gt;&lt;DDCSSN&gt;${cusdi_ddcssn}&lt;/DDCSSN&gt;&lt;DDCNA2&gt;${cusdi_ddcna2}&lt;/DDCNA2&gt;&lt;DDDRCS&gt;&lt;/DDDRCS&gt;&lt;DDLCCD&gt;&lt;/DDLCCD&gt;&lt;DDCNA3&gt;&lt;/DDCNA3&gt;&lt;DDCNA4&gt;&lt;/DDCNA4&gt;&lt;DDCRNM&gt;${cusdi_ddcrnm}&lt;/DDCRNM&gt;&lt;DDCRTN&gt;TOWN 33&lt;/DDCRTN&gt;&lt;DDDINC&gt;&lt;/DDDINC&gt;&lt;DDPAIN&gt;&lt;/DDPAIN&gt;&lt;DDPCNB&gt;&lt;/DDPCNB&gt;&lt;DDACOC&gt;&lt;/DDACOC&gt;&lt;DDCASC&gt;&lt;/DDCASC&gt;&lt;DDCNCZ&gt;${cusdi_ddcncz}&lt;/DDCNCZ&gt;&lt;DDBSIN&gt;&lt;/DDBSIN&gt;&lt;DDCOLC&gt;${cusdi_ddcolc}&lt;/DDCOLC&gt;&lt;DDBNBI&gt;&lt;/DDBNBI&gt;&lt;DDSDAL&gt;&lt;/DDSDAL&gt;&lt;DDLINC&gt;01&lt;/DDLINC&gt;&lt;DDFCAL&gt;&lt;/DDFCAL&gt;&lt;DDLICD&gt;&lt;/DDLICD&gt;&lt;DDCTNB&gt;&lt;/DDCTNB&gt;&lt;DDTAIN&gt;&lt;/DDTAIN&gt;&lt;DDREID&gt;&lt;/DDREID&gt;&lt;DDBRCD&gt;001&lt;/DDBRCD&gt;&lt;DDCSTY&gt;R&lt;/DDCSTY&gt;&lt;DDCDEL&gt;N&lt;/DDCDEL&gt;&lt;DDBRTH&gt;&lt;/DDBRTH&gt;&lt;DDPRVO&gt;&lt;/DDPRVO&gt;&lt;DDDOLV&gt;&lt;/DDDOLV&gt;&lt;DDMDTL&gt;&lt;/DDMDTL&gt;&lt;ADDCNA1&gt;&lt;/ADDCNA1&gt;&lt;ADDCNA2&gt;&lt;/ADDCNA2&gt;&lt;ADDCNA3&gt;&lt;/ADDCNA3&gt;&lt;ADDCNA4&gt;&lt;/ADDCNA4&gt;&lt;DDCWL1&gt;&lt;/DDCWL1&gt;&lt;DDCWL2&gt;&lt;/DDCWL2&gt;&lt;DDCWL3&gt;&lt;/DDCWL3&gt;&lt;DDCWL4&gt;&lt;/DDCWL4&gt;&lt;DDCWL5&gt;&lt;/DDCWL5&gt;&lt;DDBRT1&gt;&lt;/DDBRT1&gt;&lt;DDBRT2&gt;&lt;/DDBRT2&gt;&lt;DDCITY&gt;&lt;/DDCITY&gt;&lt;DDZIPC&gt;&lt;/DDZIPC&gt;&lt;DDTINO&gt;&lt;/DDTINO&gt;&lt;DDIDTP&gt;&lt;/DDIDTP&gt;&lt;DDISCT&gt;&lt;/DDISCT&gt;&lt;DDISDT&gt;&lt;/DDISDT&gt;&lt;DDDBTH&gt;&lt;/DDDBTH&gt;&lt;DDBTHC&gt;&lt;/DDBTHC&gt;&lt;DDBTHT&gt;&lt;/DDBTHT&gt;&lt;HOPRFC&gt;AA00&lt;/HOPRFC&gt;&lt;COCUTY&gt;GY&lt;/COCUTY&gt;&lt;AUTOAUTH&gt;Y&lt;/AUTOAUTH&gt;&lt;E5BEXT&gt;N&lt;/E5BEXT&gt;&lt;LLINC&gt;50&lt;/LLINC&gt;&lt;/CUSD&gt;&lt;/midasActionAPI&gt;]]&gt;&lt;/xml&gt;&#xd;
+         &lt;returnFormat xsi:type=&quot;xsd:int&quot;&gt;1&lt;/returnFormat&gt;&#xd;
+      &lt;/com:midasActionAPI&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">manvswmibf01</stringProp>
+          <stringProp name="HTTPSampler.port">28562</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/frwksoapapi/servlet/rpcrouter</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="TestPlan.comments">Verify content in response</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">children</stringProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings"/>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">300</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>false</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>false</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>true</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <hostname>true</hostname>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <intProp name="RespTimeGraph.graphtitlefondsize">0</intProp>
+        <intProp name="RespTimeGraph.graphtitlefontstyle">0</intProp>
+        <intProp name="RespTimeGraph.linestrockwidth">0</intProp>
+        <intProp name="RespTimeGraph.legendplacement">3</intProp>
+        <intProp name="RespTimeGraph.legendsize">0</intProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <fileName>true</fileName>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <boolProp name="useGroupName">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+        <collectionProp name="Asserion.test_strings"/>
+        <stringProp name="Assertion.custom_message"></stringProp>
+        <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+        <boolProp name="Assertion.assume_success">false</boolProp>
+        <intProp name="Assertion.test_type">16</intProp>
+      </ResponseAssertion>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </SetupThreadGroup>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
